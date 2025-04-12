@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITIO DE EXAMEN</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/abeatbykai');
+        
+        body {
+            background-color: #6e2c00;
+            font-family: 'AbeatbyKai', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #f9ebea;
+        }
+
+        h1, h2, h3 {
+            color: #6e2c00;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(110, 44, 0, 0.8);
+        }
+
+        .nav img {
+            width: 200px;
+            height: 60px;
+            transition: transform 0.3s;
+        }
+
+        .nav img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature {
+            max-width: 180px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            color: #6e2c00;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .additional-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .additional-images img {
+            width: 200px;
+            height: 249px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .additional-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Barra de redes sociales */
+        .social-bar {
+            background-color: #f9ebea;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-bar img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-bar img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-text {
+            position: absolute;
+            left: 20px;
+            color: #873600;
+            font-size: 20px;
+            font-weight: bold;
+        }
+		
+.imagen-final {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen-inspiradora {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header-image"></div>
+    
+   <nav class="nav">
+    <a href="index.html"><img src="inicio.png" alt="Inicio"></a>
+    <a href="tienda.html"><img src="tienda.png" alt="Tienda"></a>
+    <a href="colecciones.html"><img src="colecciones.png" alt="Colecciones"></a>
+    <a href="nosotros.html"><img src="nosotros.png" alt="Nosotros"></a>
+    <a href="contacto.html"><img src="contacto.png" alt="Contacto"></a>
+</nav>
+	
+<!-- Sección de Contacto -->
+<section style="background-color: #fbeee6; padding: 60px 20px; text-align: center; color: #6e2c00; animation: fadeIn 1.5s ease-in-out; margin-top: 120px;">
+    <h2 style="font-size: 36px; margin-bottom: 20px;">Contáctanos</h2>
+    <p style="font-size: 18px; margin-bottom: 40px;">
+        ¡Estamos felices de conectar contigo! Puedes escribirnos o hacer tus pedidos por cualquiera de nuestras plataformas digitales:
+    </p>
+    
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; align-items: center;">
+        <a href="https://www.mercadolibre.com.mx" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/870/870928.png" alt="Mercado Libre" style="width: 60px; height: 60px; transition: transform 0.3s;">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 60px; height: 60px; transition: transform 0.3s;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" style="width: 60px; height: 60px; transition: transform 0.3s;">
+        </a>
+        <a href="https://www.pinterest.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" style="width: 60px; height: 60px; transition: transform 0.3s;">
+        </a>
+        <a href="https://wa.me/528110905973" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 60px; height: 60px; transition: transform 0.3s;">
+        </a>
+    </div>
+
+    <p style="margin-top: 30px; font-size: 16px;">
+        📱 También puedes escribirnos directamente a nuestro WhatsApp: <strong>811 090 5973</strong>
+    </p>
+</section>
+
+	
+	<!-- Imagen final -->
+<section class="imagen-final">
+  <img src="imagen de fondo 3.png" alt="Imagen final del sitio" class="imagen-inspiradora">
+</section>
+
+	
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITIO DE EXAMEN</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/abeatbykai');
+        
+        body {
+            background-color: #6e2c00;
+            font-family: 'AbeatbyKai', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #f9ebea;
+        }
+
+        h1, h2, h3 {
+            color: #f9ebea;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(110, 44, 0, 0.8);
+        }
+
+        .nav img {
+            width: 200px;
+            height: 60px;
+            transition: transform 0.3s;
+        }
+
+        .nav img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature {
+            max-width: 180px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            color: #6e2c00;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .additional-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .additional-images img {
+            width: 200px;
+            height: 249px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .additional-images img:hover {
+            transform: scale(1.1);
+        }
+		
+        /* Barra de redes sociales */
+        .social-bar {
+            background-color: #f9ebea;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-bar img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-bar img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-text {
+            position: absolute;
+            left: 20px;
+            color: #873600;
+            font-size: 20px;
+            font-weight: bold;
+        }
+		
+		.info-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-family: 'AbeatbyKai', sans-serif;
+  animation: blinkBackground 2s infinite;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  text-align: left;
+  color: #000;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.desc {
+  font-size: 0.9rem;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+/* Animación de parpadeo como foco */
+@keyframes blinkBackground {
+  0%, 100% {
+    background-color: #f5f5f5;
+  }
+  50% {
+    background-color: #fff7f7;
+  }
+}
+		.info-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-family: 'AbeatbyKai', sans-serif;
+  animation: blinkBackground 2s infinite;
+  margin-top: 20px; /* Añadir espacio arriba */
+}
+	
+		body {
+  background-color: #6e2c00;
+  font-family: 'AbeatbyKai', sans-serif;
+  margin: 0;
+  padding: 100px 0 0 0; /* Espacio superior añadido */
+  text-align: center;
+  color: #f9ebea;
+}
+
+    </style>
+</head>
+<body>
+    
+   <nav class="nav">
+    <a href="index.html"><img src="inicio.png" alt="Inicio"></a>
+    <a href="tienda.html"><img src="tienda.png" alt="Tienda"></a>
+    <a href="colecciones.html"><img src="colecciones.png" alt="Colecciones"></a>
+    <a href="nosotros.html"><img src="nosotros.png" alt="Nosotros"></a>
+    <a href="contacto.html"><img src="contacto.png" alt="Contacto"></a>
+</nav>
+
+	
+	<div class="info-bar">
+  <div class="info-item">
+    <span class="icon">👤</span>
+    <div>
+      <strong>REFIERE A TUS AMIGOS</strong><br>
+      <span class="desc">CONSIGUE <span class="highlight">15% DE DTO. EXTRA</span></span>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="info-item">
+    <span class="icon">🚚</span>
+    <div>
+      <strong>INFORMACIÓN DE ENVÍO</strong>
+    </div>
+  </div>
+</div>
+	
+	<section class="tienda-section" style="background-color: #6e2c00; padding: 50px 20px;">
+  <h2 style="color: #f9ebea; font-weight: bold; margin-bottom: 30px;">Nuestra Tienda</h2>
+  <div class="tienda-grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+	  
+
+    <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t1.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Taza Amanecer</h3>
+  <p>$120 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+
+
+    <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t2.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Calma</h3>
+  <p>$99 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t3.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Arena Viva</h3>
+  <p>$110 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t4.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Sirena </h3>
+  <p>$250 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t5.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Horizonte </h3>
+  <p>$120 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t6.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Tinta de Mar</h3>
+  <p>$180 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t7.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;"> Alba </h3>
+  <p>$200 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t8.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Mistral</h3>
+  <p>$250 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t9.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Taza Nácar</h3>
+  <p>$250 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t10.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Susurro</h3>
+  <p>$250 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t11.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Isla</h3>
+  <p>$250 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t12.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Bruma </h3>
+  <p>$250 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t13.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Piedra Blanca</h3>
+  <p>$280 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t14.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Estuario</h3>
+  <p>$200 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t15.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Tierra Mojada</h3>
+  <p>$240 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t16.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Coralina</h3>
+  <p>$260 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t17.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Fondo Marino</h3>
+  <p>$250 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  <div class="producto" style="background-color: #f9ebea; color: #6e2c00; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-align: center;">
+  <img src="t18.png" alt="Taza artesanal" style="width: 100%; border-radius: 10px;">
+  <h3 style="font-weight: bold; margin: 10px 0; color: #6e2c00;">Cuenco del Albar</h3>
+  <p>$270 MXN</p>
+  <a href="https://www.mercadolibre.com.mx" target="_blank" style="display: inline-block; background-color: #873600; color: #f9ebea; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Comprar</a>
+</div>
+	  
+  </div>
+</section>
+	
+    <div class="social-bar">
+        <div class="social-text">Visítanos</div>
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.pinterest.com/" target="_blank"><img src="Pintere.png" alt="Pinterest"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+</body>
+</html>

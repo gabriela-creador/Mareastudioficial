@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITIO DE EXAMEN</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/abeatbykai');
+        
+        body {
+            background-color: #6e2c00;
+            font-family: 'AbeatbyKai', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #f9ebea;
+        }
+
+        h1, h2, h3 {
+            color: #f9ebea;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(110, 44, 0, 0.8);
+        }
+
+        .nav img {
+            width: 200px;
+            height: 60px;
+            transition: transform 0.3s;
+        }
+
+        .nav img:hover {
+            transform: scale(1.1);
+        }
+
+        .header-image {
+            width: 100%;
+            height: 100vh;
+            background: url('img1.1.png') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature {
+            max-width: 180px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            color: #6e2c00;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .additional-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .additional-images img {
+            width: 200px;
+            height: 249px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .additional-images img:hover {
+            transform: scale(1.1);
+        }
+.testimonials-section {
+            background-color: #6e2c00;
+            color: #fff;
+            padding: 50px 20px;
+            margin-top: 40px;
+            animation: slideInTestimonials 2s ease-in-out forwards;
+        }
+
+        .testimonials-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .testimonial h3 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes slideInTestimonials {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Barra de redes sociales */
+        .social-bar {
+            background-color: #f9ebea;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-bar img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-bar img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-text {
+            position: absolute;
+            left: 20px;
+            color: #873600;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-image"></div>
+    
+   <nav class="nav">
+    <a href="index.html"><img src="inicio.png" alt="Inicio"></a>
+    <a href="tienda.html"><img src="tienda.png" alt="Tienda"></a>
+    <a href="colecciones.html"><img src="colecciones.png" alt="Colecciones"></a>
+    <a href="nosotros.html"><img src="nosotros.png" alt="Nosotros"></a>
+    <a href="contacto.html"><img src="contacto.png" alt="Contacto"></a>
+</nav>
+
+    <div class="content">
+        <h1>Bienvenidos a Marea Studio</h1>
+        <p>En <strong>Marea Studio</strong>, la cerámica cobra vida a través de la fusión entre el arte, la naturaleza y la tradición artesanal.  Inspirados en el fluir del agua, el tacto de la tierra y la calidez del fuego, moldeamos cada pieza con dedicación y alma.
+Nuestra colección está diseñada para quienes aprecian la belleza de lo auténtico: tazas, platos, jarrones y piezas decorativas que llevan consigo el sello de lo hecho a mano. Cada creación es única, imperfectamente perfecta, reflejando la armonía entre lo natural y lo contemporáneo.
+
+</p>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h3>Materiales naturales</h3>
+            <p>Seleccionamos arcillas y esmaltes de alta calidad.</p>
+        </div>
+        <div class="feature">
+            <h3>Diseño con propósito</h3>
+            <p>Inspirados en la naturaleza y la estética atemporal.</p>
+        </div>
+        <div class="feature">
+            <h3>Hecho a mano</h3>
+            <p>Cada objeto pasa por un proceso artesanal único.</p>
+        </div>
+        <div class="feature">
+            <h3>Envíos a todo México</h3>
+            <p>Recibe tu pieza con total seguridad y garantía.</p>
+        </div>
+        <div class="feature">
+            <h3>Ediciones limitadas</h3>
+            <p>Cada pieza es exclusiva y única.</p>
+        </div>
+    </div>
+
+    <div class="additional-images">
+        <img src="material.png" alt="material">
+        <img src="coleciones.png" alt="coleciones">
+        <img src="envio.png" alt="envio">
+        <img src="diseño.png" alt="diseño">
+        <img src="manos.png" alt="manos">
+    </div>
+	<div class="testimonials-section">
+        <h2>Testimonios de Clientes Satisfechos</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"¡Absolutamente enamorada de mi nueva taza! Es perfecta, el diseño es tan único y elegante. ¡Definitivamente compraré más!"</p>
+                <h3>– Carla G.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"La pieza que adquirí superó todas mis expectativas. El detalle en la cerámica es impresionante y la calidad es inigualable. ¡Definitivamente volveré a comprar!"</p>
+                <h3>– Sofía M.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"Me encanta la autenticidad de Marea Studio. Las piezas son tan originales y cada vez que recibo un pedido, me siento como si estuviera recibiendo un pedazo de arte único. ¡Gracias por tan bellas creaciones!"</p>
+                <h3>– Carlos T.</h3>
+            </div>
+        </div>
+    </div>
+<div class="content">
+        <p>En Marea Studio, creemos que cada pieza tiene una energía especial, como una ola que deja huella.
+Queremos que nuestras creaciones formen parte de tu vida, de tus espacios, de tus rituales diarios.
+
+Gracias por estar aquí y ser parte de este viaje.
+Explora, elige, siente. .
+</p>
+	</div>
+	
+    <div class="social-bar">
+        <div class="social-text">Visítanos</div>
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.pinterest.com/" target="_blank"><img src="Pintere.png" alt="Pinterest"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+</body>
+</html>

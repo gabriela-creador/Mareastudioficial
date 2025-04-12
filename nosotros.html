@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITIO DE EXAMEN</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/abeatbykai');
+        
+        body {
+            background-color: #6e2c00;
+            font-family: 'AbeatbyKai', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #f9ebea;
+        }
+
+        h1, h2, h3 {
+            color: #6e2c00;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(110, 44, 0, 0.8);
+        }
+
+        .nav img {
+            width: 200px;
+            height: 60px;
+            transition: transform 0.3s;
+        }
+
+        .nav img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature {
+            max-width: 180px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            color: #6e2c00;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .additional-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .additional-images img {
+            width: 200px;
+            height: 249px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .additional-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Barra de redes sociales */
+        .social-bar {
+            background-color: #f9ebea;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-bar img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-bar img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-text {
+            position: absolute;
+            left: 20px;
+            color: #873600;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+		.nosotros {
+    background-image: url('imagen de fondo.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+	margin-top: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nosotros-contenido {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #6e2c00;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.nosotros h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.nosotros p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+	@media (max-width: 768px) {
+    .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+		
+		
+.imagen-final {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen-inspiradora {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 500px;
+}
+		
+    </style>
+</head>
+<body>
+    <div class="header-image"></div>
+    
+   <nav class="nav">
+    <a href="index.html"><img src="inicio.png" alt="Inicio"></a>
+    <a href="tienda.html"><img src="tienda.png" alt="Tienda"></a>
+    <a href="colecciones.html"><img src="colecciones.png" alt="Colecciones"></a>
+    <a href="nosotros.html"><img src="nosotros.png" alt="Nosotros"></a>
+    <a href="contacto.html"><img src="contacto.png" alt="Contacto"></a>
+</nav>
+
+	<section class="nosotros">
+  <div class="nosotros-contenido">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      En <strong>Marea Studio</strong> somos una marca mexicana que nace del amor por la tierra, el fuego y la creación artesanal. Nos dedicamos a dar vida a piezas de <strong>cerámica únicas</strong> que cuentan historias, conectan con la naturaleza y celebran la belleza de lo hecho a mano.
+    </p>
+    <p>
+      Cada diseño es una fusión de tradición y modernidad, pensado para transmitir calma, esencia y un toque del mar que nos inspira. Creemos en los procesos lentos, en el alma de cada objeto y en el arte como forma de vida.
+    </p>
+    <p>
+      Somos Marea: pasión por la cerámica, amor por lo auténtico.
+    </p>
+  </div>
+</section>
+	
+	<!-- Sección de Misión y Visión -->
+<section class="mision-vision" style="display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 30px; padding: 80px 20px; background-color: #fbeee6; color: #6e2c00; margin-top: 50px;">
+    <div style="flex: 1; min-width: 300px; background-color: rgba(255, 255, 255, 0.9); padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); animation: fadeIn 1.5s ease-in-out;">
+        <h2 style="font-size: 32px; margin-bottom: 20px;">Nuestra Misión</h2>
+        <p style="font-size: 18px; line-height: 1.8;">
+            Crear piezas de cerámica que inspiren conexión emocional, celebren la belleza de lo natural y eleven los espacios cotidianos con arte hecho a mano. Nos comprometemos con la autenticidad, la calidad y la pasión por lo artesanal.
+        </p>
+    </div>
+    <div style="flex: 1; min-width: 300px; background-color: rgba(255, 255, 255, 0.9); padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); animation: fadeIn 1.5s ease-in-out;">
+        <h2 style="font-size: 32px; margin-bottom: 20px;">Nuestra Visión</h2>
+        <p style="font-size: 18px; line-height: 1.8;">
+            Ser una marca reconocida por transmitir alma en cada pieza, expandiendo el arte de la cerámica mexicana al mundo, con respeto por el entorno, las tradiciones y el bienestar emocional de quienes nos eligen.
+        </p>
+    </div>
+</section>
+
+<!-- Nota de comunicación -->
+<section style="background-color: #6e2c00; color: #f9ebea; padding: 40px 20px; text-align: center; animation: fadeIn 2s ease-in-out;">
+    <h2 style="font-size: 28px; margin-bottom: 10px; color: #f9ebea;">📩 Comunicación 100% en línea</h2>
+    <p style="font-size: 18px;">
+        En Marea Studio trabajamos de manera digital para brindarte atención ágil y personalizada. <br>
+        Todas nuestras consultas, pedidos y seguimiento se realizan exclusivamente por medios en línea.
+    </p>
+</section>
+	<!-- Imagen final -->
+<section class="imagen-final">
+  <img src="imagen de fondo 2.png" alt="Imagen final del sitio" class="imagen-inspiradora">
+</section>
+
+<!-- Barra de redes sociales -->
+<footer class="social-bar">
+  <span class="social-text">Síguenos</span>
+  <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+  <a href="https://www.facebook.com/" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
+  <a href="https://www.pinterest.com/" target="_blank"><img src="Pintere.png" alt="Pinterest"></a>
+</footer>
+
+
+	
+</body>
+</html>

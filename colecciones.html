@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITIO DE EXAMEN</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/abeatbykai');
+        
+        body {
+            background-color: #6e2c00;
+            font-family: 'AbeatbyKai', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #f9ebea;
+        }
+
+        h1, h2, h3 {
+            color: #f9ebea;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(110, 44, 0, 0.8);
+        }
+
+        .nav img {
+            width: 200px;
+            height: 60px;
+            transition: transform 0.3s;
+        }
+
+        .nav img:hover {
+            transform: scale(1.1);
+        }
+
+        .header-image {
+            width: 100%;
+            height: 100vh;
+            background: url('tulum.png') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature {
+            max-width: 180px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            color: #6e2c00;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .additional-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .additional-images img {
+            width: 200px;
+            height: 249px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .additional-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Barra de redes sociales */
+        .social-bar {
+            background-color: #f9ebea;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-bar img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-bar img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-text {
+            position: absolute;
+            left: 20px;
+            color: #873600;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilos del chat FAQ */
+        .chat-faq-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #641e16;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .chat-faq-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #6e2c00;
+            color: white;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #873600;
+        }
+
+        .faq-answer {
+            display: none;
+            margin: 10px 0;
+            background-color: #6e2c00;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+		.lanzamiento {
+    background: linear-gradient(to bottom, #fef6f0, #fff);
+    padding: 70px 20px;
+    text-align: center;
+    color: #3e2a1a;
+}
+
+.lanzamiento h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1b4f46;
+}
+
+.lanzamiento .descripcion {
+    font-size: 18px;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.lanzamiento .llamada {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #af4c2c;
+    font-weight: bold;
+}
+
+.btn-agendar {
+    display: inline-block;
+    background-color: #1b4f46;
+    color: #fff;
+    padding: 14px 26px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+    background-color: #296e60;
+}
+		
+		.videos-playas {
+    background-color: #fef6f0;
+    padding: 60px 20px;
+    text-align: center;
+    color: #3e2a1a;
+}
+
+.videos-playas {
+    background-color: #fef6f0;
+    padding: 60px 20px;
+    text-align: center;
+    color: #3e2a1a;
+}
+
+.videos-playas h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #1b4f46;
+}
+
+.videos-playas .intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 480px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.imagen-final {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen-inspiradora {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+
+		
+    </style>
+</head>
+<body>
+    <div class="header-image"></div>
+    
+   <nav class="nav">
+    <a href="index.html"><img src="inicio.png" alt="Inicio"></a>
+    <a href="tienda.html"><img src="tienda.png" alt="Tienda"></a>
+    <a href="colecciones.html"><img src="colecciones.png" alt="Colecciones"></a>
+    <a href="nosotros.html"><img src="nosotros.png" alt="Nosotros"></a>
+    <a href="contacto.html"><img src="contacto.png" alt="Contacto"></a>
+</nav>
+
+    <!-- Chat FAQ -->
+    <div class="chat-faq-container">
+        <div class="chat-faq-title">Preguntas Frecuentes</div>
+        <div class="faq-question">¿Cómo hacer un pedido?</div>
+        <div class="faq-answer">Para hacer un pedido, solo debes seleccionar el producto y seguir el proceso de pago.</div>
+        
+        <div class="faq-question">¿Cuáles son las opciones de pago?</div>
+        <div class="faq-answer">Aceptamos tarjetas de crédito, débito y PayPal como opciones de pago.</div>
+
+        <div class="faq-question">¿Hacen envíos internacionales?</div>
+        <div class="faq-answer">Sí, realizamos envíos internacionales a varios países. Consulta la lista en nuestra sección de envíos.</div>
+
+        <div class="faq-question">¿Puedo devolver un producto?</div>
+        <div class="faq-answer">Sí, ofrecemos una política de devoluciones dentro de los primeros 30 días después de recibir tu pedido.</div>
+    </div>
+
+	<!-- Anuncio de Lanzamiento de la Colección -->
+<section class="lanzamiento">
+    <h2>✨ Lanzamiento Oficial: Colección 'Raíces del Mar' ✨</h2>
+    <p class="descripcion">
+        Este 20 de abril prepárate para conectar con lo natural, lo orgánico y lo hecho con el corazón. 
+        Presentamos nuestra nueva colección de tazas y maceteros inspirados en Tulum y otras playas mexicanas.
+        Diseños que abrazan las raíces, el sol y el mar, pensados para personas que buscan piezas únicas 
+        para su día a día o su hogar.
+    </p>
+    <p class="llamada">
+        ¡Agéndalo ya y sé de los primeros en descubrirla!
+    </p>
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Lanzamiento+Colección+Raíces+del+Mar&dates=20250420T180000Z/20250420T190000Z&details=Conoce+la+nueva+colección+de+maceteros+y+tazas+inspirada+en+Tulum.+Piezas+únicas+hechas+con+amor.&location=https%3A%2F%2Ftu-sitio-web.com%2Fcoleccion" 
+       target="_blank" 
+       class="btn-agendar">
+       📅 Agendar en Google Calendar
+    </a>
+</section>
+
+	<section class="videos-playas">
+  <h2>🌴 Las playas que inspiran nuestra esencia</h2>
+  <p class="intro">
+    Cada diseño nace de lugares mágicos como estos. Sumérgete en las playas más hermosas de México y siente la inspiración detrás de nuestra colección.
+  </p>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IDk8MOe0O3o?si=11mln7xw1OmUNKuD" 
+            title="Playas de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sRaOMQYkO9Q?si=PHOUyRrYGtZAR0CA" 
+            title="Playas de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+	<!-- Imagen final -->
+<section class="imagen-final">
+  <img src="tulum 2.png" alt="Imagen final del sitio" class="imagen-inspiradora">
+</section>
+
+<!-- Barra de redes sociales -->
+<footer class="social-bar">
+  <span class="social-text">Síguenos</span>
+  <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+  <a href="https://www.facebook.com/" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
+  <a href="https://www.pinterest.com/" target="_blank"><img src="Pintere.png" alt="Pinterest"></a>
+</footer>
+
+
+	
+    <script>
+        // Script para mostrar y ocultar respuestas de las preguntas frecuentes
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
